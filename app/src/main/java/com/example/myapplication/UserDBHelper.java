@@ -9,19 +9,18 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import com.example.myapplication.baen.UserInfo;
-//import com.example.myapplication.bean.UserInfo;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @SuppressLint("DefaultLocale")
 public class UserDBHelper extends SQLiteOpenHelper {
+    public static final String TABLE_NAME = "user_info"; // 表的名称
     private static final String TAG = "UserDBHelper";
     private static final String DB_NAME = "user.db"; // 数据库的名称
     private static final int DB_VERSION = 1; // 数据库的版本号
     private static UserDBHelper mHelper = null; // 数据库帮助器的实例
     private SQLiteDatabase mDB = null; // 数据库的实例
-    public static final String TABLE_NAME = "user_info"; // 表的名称
 
     private UserDBHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);

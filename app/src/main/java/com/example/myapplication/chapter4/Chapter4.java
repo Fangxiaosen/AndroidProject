@@ -34,7 +34,7 @@ public class Chapter4 extends AppCompatActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View v) {
-        
+
         if (v.getId() == R.id.bt_chapter4_1) {
             Intent intent = new Intent(Chapter4.this, Chapter4_1.class);
             startActivity(intent);

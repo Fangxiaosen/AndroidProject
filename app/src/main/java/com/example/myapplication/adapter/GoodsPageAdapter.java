@@ -17,9 +17,9 @@ import java.util.List;
 
 public class GoodsPageAdapter extends PagerAdapter {
 
+    List<ImageView> imageViewList = new ArrayList<ImageView>();
     private Context context;
     private List<Goods> list;
-    List<ImageView>imageViewList = new ArrayList<ImageView>();
 
     public GoodsPageAdapter(Context context, List<Goods> list) {
         for (int i = 0; i < list.size(); i++) {

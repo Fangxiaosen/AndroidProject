@@ -46,13 +46,6 @@ public class LoginPasswdActivity
     private String verifyCode; // 生成的验证码
     private boolean remember = false; // 记住密码标志
     private UserDBHelper dbHelper; // 数据库操作帮助类
-
-    // 定义登录模式的枚举
-    private enum LoginMode {
-        PASSWORD,   // 密码登录
-        VERIFY_CODE // 验证码登录
-    }
-
     private LoginMode currentMode = LoginMode.PASSWORD; // 默认登录模式为密码登录
 
     @Override
@@ -247,6 +240,12 @@ public class LoginPasswdActivity
         remember = isChecked; // 更新记住密码标志
     }
 
+    // 定义登录模式的枚举
+    private enum LoginMode {
+        PASSWORD,   // 密码登录
+        VERIFY_CODE // 验证码登录
+    }
+
     /**
      * 自定义文本监听器类，用于隐藏输入法
      */
@@ -260,10 +259,12 @@ public class LoginPasswdActivity
         }
 
         @Override
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        }
 
         @Override
-        public void onTextChanged(CharSequence s, int start, int before, int count) {}
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+        }
 
         @Override
         public void afterTextChanged(Editable s) {

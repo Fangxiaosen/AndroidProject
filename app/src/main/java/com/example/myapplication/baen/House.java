@@ -27,6 +27,7 @@ public class House {
     public int houseImg;
     public String houseTitle;
     public float housePrice;
+
     public House(int houseImg, String houseTitle, float housePrice) {
         this.houseImg = houseImg;
         this.houseTitle = houseTitle;

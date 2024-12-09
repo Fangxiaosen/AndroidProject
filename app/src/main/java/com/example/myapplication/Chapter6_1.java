@@ -23,6 +23,7 @@ public class Chapter6_1 extends AppCompatActivity {
 
     /**
      * 当活动创建时调用，绑定视图并设置监听器。
+     *
      * @param savedInstanceState 如果活动被重新初始化时用于恢复数据的 Bundle
      */
     @Override
@@ -55,6 +56,7 @@ public class Chapter6_1 extends AppCompatActivity {
 
     /**
      * 获取当前本地时间，并格式化为 HH:mm:ss 格式。
+     *
      * @return 格式化后的当前时间字符串
      */
     private String getLocalTime() {

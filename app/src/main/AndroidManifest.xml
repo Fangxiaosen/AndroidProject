@@ -17,8 +17,12 @@
             android:exported="false" />
         <activity
             android:name=".LoginPasswdActivity"
-            android:exported="false">
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Chapter10"
@@ -49,12 +53,8 @@
             android:exported="false" />
         <activity
             android:name=".chapter4.Chapter4_3"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false" >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".chapter4.Chapter4_2"

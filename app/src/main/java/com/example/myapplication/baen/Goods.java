@@ -6,18 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Goods {
-    public String name; //名称
-    public String desc; //描述
-    public float price; //价格
-    public int pic; //图片
-
-    public Goods(String name, String desc, float price, int pic) {
-        this.name = name;
-        this.desc = desc;
-        this.price = price;
-        this.pic = pic;
-    }
-
     //手机名称数组
     private static String[] nameArray = {
             "iphone11", "Mate30", "OPPO Reno3", "荣耀30S"
@@ -32,6 +20,17 @@ public class Goods {
     private static float[] priceArray = {6299, 4999, 3999, 2999};
     //手机图片数组
     private static int[] imgArray = {R.drawable.iphone, R.drawable.huawei, R.drawable.oppo, R.drawable.rongyao};
+    public String name; //名称
+    public String desc; //描述
+    public float price; //价格
+    public int pic; //图片
+
+    public Goods(String name, String desc, float price, int pic) {
+        this.name = name;
+        this.desc = desc;
+        this.price = price;
+        this.pic = pic;
+    }
 
     //获取手机列表信息
     public static List<Goods> getGoodsList() {
