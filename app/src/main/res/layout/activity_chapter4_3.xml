@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@color/app_bg"
         android:orientation="vertical">
 
         <!-- 修复布局结构 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:background="@color/app_bg"
             android:orientation="horizontal">
 
             <Button
@@ -63,12 +63,16 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="300dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:src="@drawable/app_banner" />
 
         <!-- 搜索框 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -90,6 +94,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:text="300座城市50万套民宿"
             android:textColor="@color/black"
             android:textSize="30sp"
@@ -97,8 +103,10 @@
 
         <!-- 城市滚动视图 -->
         <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="150dp">
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
 
             <GridLayout
                 android:layout_width="wrap_content"
@@ -130,6 +138,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:text="独有千秋"
             android:textColor="@color/black"
             android:textSize="30sp"
@@ -139,6 +149,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="280dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -173,6 +185,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:orientation="vertical"
             android:padding="10dp">
 
@@ -239,5 +253,15 @@
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
+
+        <com.example.myapplication.view.NestedListView
+            android:id="@+id/lv_house"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp" />
+
     </LinearLayout>
 </ScrollView>

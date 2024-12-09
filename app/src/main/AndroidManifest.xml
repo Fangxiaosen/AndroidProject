@@ -13,22 +13,19 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginPasswdActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Chapter10"
             android:exported="false" />
         <activity
             android:name=".Chapter9"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".CityDetailActivity"
             android:exported="false" />
@@ -52,7 +49,13 @@
             android:exported="false" />
         <activity
             android:name=".chapter4.Chapter4_3"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".chapter4.Chapter4_2"
             android:exported="false" />
